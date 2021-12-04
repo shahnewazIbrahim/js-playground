@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="target" style="text-align: center;">
+        <h3><u>Calculator</u></h3>
+        <input type="number" id="numberOne" placeholder="Put your first number" value="">
+        <input type="number" id="numberTwo" placeholder="Put your second number" value="">
+        <input type="datetime-local" name="" id="localTime">
+        <button onclick="calculate()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <div  style="text-align: center;">
+        <h3><u>Mind game</u></h3>
+        <marquee><b>Instruction:</b> First input a number. Then click let see button and if the number you input is matched to Logens (The computer) number then you win.. Please input number range in (1-9).</marquee>
+        <input type="number" id="userInputNumber" required>
+        <div>[Note: The number must be in the range in 1 - 9]</div>
+        <button id="letSee">Let see</button>
+        <div id="matchingResult"></div>
+    </div> 
+    <script src="app.js"></script>
+    <!-- <script src="problem-solving.js"></script> -->
+</body>
+
+</html>
