@@ -25,4 +25,21 @@ if(hour === 0) {
     prepand= (prepand==='PM') ? 'PM': 'AM';
   }
 }
-console.log(`Current Time: ${hour} ${ prepand} : ${minute}:${second}`);
+// console.log(`Current Time: ${hour} ${ prepand} : ${minute}:${second}`);
+
+
+function animate_string(id) 
+{
+    var element = document.getElementById(id);
+    var textNode = element.childNodes[0]; // assuming no other children
+    var text = textNode.data;
+    var textLength = text.length;
+    console.log(text)
+    console.log(text.length)
+    console.log(text[3])
+
+  setInterval(function () {
+    text = text[textLength - 1] + text.substring(0, textLength - 1);
+    textNode.data = text;
+  }, 300);
+}
